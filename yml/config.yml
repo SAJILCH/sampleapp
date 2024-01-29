@@ -1,0 +1,23 @@
+platform: &platform
+    platform: android
+
+device_config: &device_config
+    ios:
+        platformName: 'ios'
+        platformVersion: '13.5'
+        deviceName: 'iPhone 11 Pro MT'
+        automationName: 'XCUITest'
+        appPackage: ''
+        appActivity: ''
+        noReset: 'True'
+        folder: ' '
+    android:
+        platformName: 'android'
+        #platformVersion: '9'
+        deviceName: 'emulator-5554'
+        app: 'apk'
+
+
+production:
+    <<: *platform
+    <<: *device_config
